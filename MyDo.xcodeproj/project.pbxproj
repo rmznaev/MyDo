@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D82FD80A715DC7868568A7E /* Pods_MyDo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40AC9ABFFE82C28329D8D0B3 /* Pods_MyDo.framework */; };
 		C4DB9E2723035BFA0072CB82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DB9E2623035BFA0072CB82 /* AppDelegate.swift */; };
 		C4DB9E2923035BFA0072CB82 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DB9E2823035BFA0072CB82 /* TodoListViewController.swift */; };
 		C4DB9E2C23035BFA0072CB82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DB9E2A23035BFA0072CB82 /* Main.storyboard */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40AC9ABFFE82C28329D8D0B3 /* Pods_MyDo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A365C4B868B6DD3685C1B86 /* Pods-MyDo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDo.debug.xcconfig"; path = "Target Support Files/Pods-MyDo/Pods-MyDo.debug.xcconfig"; sourceTree = "<group>"; };
+		BCF1D066A58F7652FCF4C82F /* Pods-MyDo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDo.release.xcconfig"; path = "Target Support Files/Pods-MyDo/Pods-MyDo.release.xcconfig"; sourceTree = "<group>"; };
 		C4DB9E2323035BFA0072CB82 /* MyDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DB9E2623035BFA0072CB82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4DB9E2823035BFA0072CB82 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D82FD80A715DC7868568A7E /* Pods_MyDo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7BEEFC1281FD7E449442CACF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A365C4B868B6DD3685C1B86 /* Pods-MyDo.debug.xcconfig */,
+				BCF1D066A58F7652FCF4C82F /* Pods-MyDo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		890FD6CCDB695A32D379A9D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40AC9ABFFE82C28329D8D0B3 /* Pods_MyDo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C4DB9E1A23035BFA0072CB82 = {
 			isa = PBXGroup;
 			children = (
 				C4DB9E2523035BFA0072CB82 /* MyDo */,
 				C4DB9E2423035BFA0072CB82 /* Products */,
+				7BEEFC1281FD7E449442CACF /* Pods */,
+				890FD6CCDB695A32D379A9D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4DB9E3523035BFB0072CB82 /* Build configuration list for PBXNativeTarget "MyDo" */;
 			buildPhases = (
+				E69FD5C3C3637116E9CB736F /* [CP] Check Pods Manifest.lock */,
 				C4DB9E1F23035BFA0072CB82 /* Sources */,
 				C4DB9E2023035BFA0072CB82 /* Frameworks */,
 				C4DB9E2123035BFA0072CB82 /* Resources */,
+				940FCDD18A8E53D080F2106D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +194,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		940FCDD18A8E53D080F2106D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDo/Pods-MyDo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDo/Pods-MyDo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyDo/Pods-MyDo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E69FD5C3C3637116E9CB736F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyDo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4DB9E1F23035BFA0072CB82 /* Sources */ = {
@@ -320,6 +389,7 @@
 		};
 		C4DB9E3623035BFB0072CB82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A365C4B868B6DD3685C1B86 /* Pods-MyDo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -339,6 +409,7 @@
 		};
 		C4DB9E3723035BFB0072CB82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCF1D066A58F7652FCF4C82F /* Pods-MyDo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

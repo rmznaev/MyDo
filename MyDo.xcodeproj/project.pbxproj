@@ -13,6 +13,7 @@
 		C4DB9E2E23035BFB0072CB82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DB9E2D23035BFB0072CB82 /* Assets.xcassets */; };
 		C4DB9E3123035BFB0072CB82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DB9E2F23035BFB0072CB82 /* LaunchScreen.storyboard */; };
 		C4DB9E612305B3560072CB82 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4DB9E5F2305B3560072CB82 /* DataModel.xcdatamodeld */; };
+		C4FFC1552307ECD50016358F /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FFC1542307ECD50016358F /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C4DB9E3023035BFB0072CB82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4DB9E3223035BFB0072CB82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4DB9E602305B3560072CB82 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		C4FFC1542307ECD50016358F /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		C4DB9E3B2304555B0072CB82 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C4FFC1542307ECD50016358F /* CategoryViewController.swift */,
 				C4DB9E2823035BFA0072CB82 /* TodoListViewController.swift */,
 			);
 			path = Controllers;
@@ -170,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4FFC1552307ECD50016358F /* CategoryViewController.swift in Sources */,
 				C4DB9E2923035BFA0072CB82 /* TodoListViewController.swift in Sources */,
 				C4DB9E612305B3560072CB82 /* DataModel.xcdatamodeld in Sources */,
 				C4DB9E2723035BFA0072CB82 /* AppDelegate.swift in Sources */,
@@ -321,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WKC2U8KBT4;
 				INFOPLIST_FILE = MyDo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WKC2U8KBT4;
 				INFOPLIST_FILE = MyDo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
